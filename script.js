@@ -114,19 +114,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   counterElements.forEach(el => counterObserver.observe(el));
 
-  // ─── CONTACT FORM (basic feedback) ───
+  // ─── CONTACT FORM (Web3Forms Integration) ───
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = contactForm.querySelector('.btn-primary');
       const originalHTML = btn.innerHTML;
-      btn.innerHTML = '<span>Message Sent! ✓</span>';
-      btn.style.background = 'linear-gradient(135deg, #4ADE80, #16A34A)';
+
+      // Show loading state
+      btn.innerHTML = '<span>Sending...</span>';
+      btn.disabled = true;
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          btn.innerHTML = '<span>Message Sent! ✓</span>';
+          btn.style.background = 'linear-gradient(135deg, #4ADE80, #16A34A)';
+          contactForm.reset();
+        } else {
+          btn.innerHTML = '<span>Failed to Send ✗</span>';
+          btn.style.background = 'linear-gradient(135deg, #EF4444, #DC2626)';
+        }
+      } catch (error) {
+        btn.innerHTML = '<span>Failed to Send ✗</span>';
+        btn.style.background = 'linear-gradient(135deg, #EF4444, #DC2626)';
+      }
+
       setTimeout(() => {
         btn.innerHTML = originalHTML;
         btn.style.background = '';
-        contactForm.reset();
+        btn.disabled = false;
       }, 3000);
     });
   }
