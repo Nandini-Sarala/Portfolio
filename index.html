@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandini Sarala — Computer Science Engineer & Web Developer | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Nandini Sarala — a passionate Computer Science undergraduate and freelance web developer specialising in Python, Flask, JavaScript, and full-stack development. Based in Ilkal, India." />
+  <meta name="keywords"
+    content="Web Developer, Computer Science, Freelance, Python, Flask, JavaScript, Portfolio, Nandini Sarala" />
+  <meta name="author" content="Nandini Sarala" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#landing" class="nav-logo">
+        <span class="logo-text">NS</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#landing" class="nav-link active" data-section="landing">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+        <li><a href="#volunteering" class="nav-link" data-section="volunteering">Volunteering</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ PAGE 1 — LANDING ═══════════════════ -->
+  <section id="landing" class="section section-landing">
+    <div class="landing-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="landing-content">
+      <div class="landing-text">
+        <p class="landing-greeting reveal-up">Hello, I'm</p>
+        <h1 class="landing-name reveal-up delay-1">
+          Nandini <span class="text-accent">Sarala</span>
+        </h1>
+        <div class="landing-roles reveal-up delay-2">
+          <span class="role-tag">Computer Science Engineer</span>
+          <span class="role-divider">·</span>
+          <span class="role-tag">Web Developer</span>
+          <span class="role-divider">·</span>
+          <span class="role-tag">Freelance Developer</span>
+        </div>
+        <p class="landing-intro reveal-up delay-3">
+          A passionate Computer Science undergraduate at KLS Vishwanathrao Institute of Technology with a strong
+          academic record (CGPA 8.84) and hands-on experience in full-stack web development. I bring practical skills in
+          Python, Flask, JavaScript, SQL, HTML, and CSS — demonstrated through freelance projects delivered for real
+          clients. I thrive on building clean, responsive, and user-friendly web applications that solve real-world
+          problems. Currently seeking a Web Development Internship where I can contribute meaningfully to development
+          teams and accelerate my professional growth. Let's build something great together.
+        </p>
+        <div class="landing-cta reveal-up delay-4">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <div class="landing-stats reveal-up delay-5">
+          <div class="stat-item">
+            <span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="landing-photo reveal-scale delay-2">
+        <div class="photo-frame">
+          <img src="nandini_photo.jpeg" alt="Nandini Sarala — Web Developer" class="profile-img" />
+        </div>
+        <div class="photo-badge">
+          <span class="badge-dot"></span>
+          <span>Open to Work</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 2 — ABOUT ME ═══════════════════ -->
+  <section id="about" class="section section-about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-up delay-1">
+          <p class="about-paragraph">
+            I am Nandini Sarala,Computer Science Engineering student with a deep passion for web
+            development and software engineering. I have hands-on freelance experience designing and deploying fully
+            responsive, multi-page business websites using HTML, CSS, JavaScript, and Bootstrap for clients across India
+            and Canada.
+          </p>
+          <p class="about-paragraph">
+            My technical toolkit spans Python, Flask, MySQL, Node.js, Tailwind CSS, and OpenCV, enabling me to work
+            across the full stack with confidence. I am driven by a commitment to clean code, intuitive UI design, and
+            continuous learning — whether building AI-powered notice boards or real-time computer vision apps.
+          </p>
+          <p class="about-paragraph">
+            What sets me apart is my ability to independently take a project from concept to deployment, backed by a
+            strong academic foundation and a collaborative mindset.
+          </p>
+        </div>
+        <div class="about-cards reveal-up delay-2">
+          <div class="about-card mission-card">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </div>
+            <h3>Mission</h3>
+            <p>To build accessible, high-quality web solutions that solve real problems and create meaningful impact for
+              users and businesses alike.</p>
+          </div>
+          <div class="about-card vision-card">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <h3>Vision</h3>
+            <p>To grow into a skilled full-stack engineer who contributes to innovative technology products and inspires
+              the next generation of developers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-tech-strip reveal-up delay-3">
+        <span class="tech-label">Core Stack:</span>
+        <div class="tech-scroll">
+          <div class="tech-track">
+            <span class="tech-item">Python</span>
+            <span class="tech-item">Flask</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">HTML</span>
+            <span class="tech-item">CSS</span>
+            <span class="tech-item">MySQL</span>
+            <span class="tech-item">Node.js</span>
+            <span class="tech-item">Tailwind CSS</span>
+            <span class="tech-item">OpenCV</span>
+            <span class="tech-item">Git</span>
+            <!-- duplicate for seamless loop -->
+            <span class="tech-item">Python</span>
+            <span class="tech-item">Flask</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">HTML</span>
+            <span class="tech-item">CSS</span>
+            <span class="tech-item">MySQL</span>
+            <span class="tech-item">Node.js</span>
+            <span class="tech-item">Tailwind CSS</span>
+            <span class="tech-item">OpenCV</span>
+            <span class="tech-item">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 3 — WORK EXPERIENCE ═══════════════════ -->
+  <section id="experience" class="section section-experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Work <span class="text-accent">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <!-- Role 1 -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-block">
+                <h3 class="timeline-role">Web Developer (Freelance)</h3>
+                <span class="timeline-company">Shailja Info Services</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-type">Freelance</span>
+                <span class="timeline-duration">2026 – Present</span>
+                <span class="timeline-location">Haliyal, India</span>
+              </div>
+            </div>
+            <ul class="timeline-duties">
+              <li>Designed and deployed a fully responsive multi-page business website for a local electronics business.
+              </li>
+              <!-- <li>Built an Apple-inspired UI with scroll-reveal animations for a polished user experience.</li> -->
+              <li>Implemented mobile sticky navigation with a hamburger menu for seamless mobile browsing.</li>
+              <li>Deployed on GitHub Pages, ensuring accessibility and fast load times.</li>
+            </ul>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <div class="achievement-chips">
+                <span class="chip">Delivered a production-ready website independently</span>
+                <span class="chip">Enhanced online visibility for a local electronics business</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-block">
+                <h3 class="timeline-role">Web Developer (Freelance)</h3>
+                <span class="timeline-company">Willfix Computers</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-type">Freelance</span>
+                <span class="timeline-duration">2026</span>
+                <span class="timeline-location">Toronto, Canada (Remote)</span>
+              </div>
+            </div>
+            <ul class="timeline-duties">
+              <li>Developed and launched a fully responsive business website for a Toronto-based laptop repair shop.
+              </li>
+              <li>Built a product showcase system to highlight services and drive customer engagement.</li>
+              <li>Promoted sustainable technology through accessible and user-friendly web design.</li>
+            </ul>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <div class="achievement-chips">
+                <span class="chip">Successfully deployed client site on GitHub Pages</span>
+                <span class="chip">Improved customer engagement through streamlined product showcase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 4 — EDUCATION ═══════════════════ -->
+  <section id="education" class="section section-education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-grid">
+        <!-- Degree 1 -->
+        <div class="edu-card reveal-up delay-1">
+          <div class="edu-card-accent"></div>
+          <div class="edu-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5" />
+            </svg>
+          </div>
+          <div class="edu-degree">Bachelor of Engineering in Computer Science (Pursuing)</div>
+          <div class="edu-school">KLS Vishwanathrao Institute of Technology, Haliyal</div>
+          <div class="edu-details">
+            <span>2023 – 2027</span>
+            <span>Full-Time</span>
+          </div>
+          <div class="edu-grade">
+            <span class="grade-badge">CGPA 8.84</span>
+          </div>
+          <ul class="edu-highlights">
+            <li>Coursework in data structures, algorithms, databases, and web technologies.</li>
+            <li>Strong foundation in C, C++, Python, and software engineering principles.</li>
+            <li>Active participation in departmental hackathons and technical events.</li>
+          </ul>
+        </div>
+        <!-- Degree 2 -->
+        <div class="edu-card reveal-up delay-2">
+          <div class="edu-card-accent"></div>
+          <div class="edu-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5" />
+            </svg>
+          </div>
+          <div class="edu-degree">XII (Pre-University / Higher Secondary)</div>
+          <div class="edu-school">Government PU College for Girls, Ilkal</div>
+          <div class="edu-details">
+            <span>2021 – 2023</span>
+            <span>Full-Time</span>
+          </div>
+          <div class="edu-grade">
+            <span class="grade-badge">85.16%</span>
+          </div>
+          <ul class="edu-highlights">
+            <li>Strong foundation in science and mathematics.</li>
+            <li>Developed analytical problem-solving skills that underpin engineering studies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 5 — PROJECTS ═══════════════════ -->
+  <section id="projects" class="section section-projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Featured <span class="text-accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal-up delay-1">
+          <div class="project-card-inner">
+            <div class="project-type">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94" />
+              </svg>
+              Computer Vision
+            </div>
+            <h3 class="project-title">OpenCV Face Detection</h3>
+            <p class="project-desc">A Flask web application enabling real-time webcam video streaming through a browser
+              interface. Implements face and eye detection using OpenCV Haar cascade classifiers for accurate real-time
+              recognition. Integrates Flask's video streaming with OpenCV for a seamless computer vision web experience.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>OpenCV</span>
+              <span>HTML</span>
+            </div>
+            <ul class="project-outcomes">
+              <li>Real-time face & eye detection in browser</li>
+              <li>Seamless Flask-OpenCV integration</li>
+              <li>Accurate Haar cascade classification</li>
+              <li>Accessible via any modern browser</li>
+            </ul>
+            <a href="https://github.com/nandini-sarala" class="project-link" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-up delay-2">
+          <div class="project-card-inner">
+            <div class="project-type">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              Full-Stack Web App
+            </div>
+            <h3 class="project-title">AI-Powered Department Noticeboard</h3>
+            <p class="project-desc">A full-stack notice board web application built with HTML, CSS, JavaScript, Flask,
+              and MySQL for a college department. Features AI-driven automatic categorisation of notices, eliminating
+              manual tagging. Includes distinct student and admin interfaces with role-based access control.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>Flask</span>
+              <span>MySQL</span>
+            </div>
+            <ul class="project-outcomes">
+              <li>AI-driven auto-categorisation of notices</li>
+              <li>Role-based access for students and admins</li>
+              <li>Efficient notice management system</li>
+              <li>Streamlined admin workflow</li>
+            </ul>
+            <a href="https://github.com/nandini-sarala" class="project-link" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 6 — SKILLS ═══════════════════ -->
+  <section id="skills" class="section section-skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Technical <span class="text-accent">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Category 1: Programming Languages -->
+        <div class="skill-category reveal-up delay-1">
+          <div class="skill-cat-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Python</span><span>88%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>SQL</span><span>82%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>C</span><span>80%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>C++</span><span>80%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Frameworks & Libraries -->
+        <div class="skill-category reveal-up delay-2">
+          <div class="skill-cat-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Flask</span><span>85%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Tailwind CSS</span><span>80%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Node.js</span><span>75%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>FastAPI</span><span>72%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="72"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Tools & Platforms -->
+        <div class="skill-category reveal-up delay-1">
+          <div class="skill-cat-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>GitHub</span><span>90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Git</span><span>88%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Railway</span><span>75%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Render</span><span>75%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Databases -->
+        <div class="skill-category reveal-up delay-2">
+          <div class="skill-cat-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+            </svg>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>MySQL</span><span>82%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Soft Skills -->
+        <div class="skill-category reveal-up delay-1">
+          <div class="skill-cat-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Communication</span><span>90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Teamwork</span><span>90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Problem Solving</span><span>88%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Adaptability</span><span>88%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Leadership</span><span>85%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: Languages -->
+        <div class="skill-category reveal-up delay-2">
+          <div class="skill-cat-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z" />
+            </svg>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Kannada</span><span>95%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>English</span><span>90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Hindi</span><span>80%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 7 — CERTIFICATIONS ═══════════════════ -->
+  <section id="certifications" class="section section-certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <!-- Cert 1 -->
+        <div class="cert-card reveal-up delay-1">
+          <div class="cert-badge">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 15l-2 5 2-1.5L14 20l-2-5z" />
+              <circle cx="12" cy="9" r="6" />
+            </svg>
+          </div>
+          <div class="cert-content">
+            <h3>Frontend Web Developer – Modern HTML, CSS, JavaScript</h3>
+            <span class="cert-provider">Udemy · 2025</span>
+          </div>
+          <div class="cert-image-link">
+            <a href="web(html,css,js).pdf" target="_blank" class="btn btn-sm">View Certificate</a>
+          </div>
+        </div>
+        <!-- Cert 2 -->
+        <div class="cert-card reveal-up delay-2">
+          <div class="cert-badge">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 15l-2 5 2-1.5L14 20l-2-5z" />
+              <circle cx="12" cy="9" r="6" />
+            </svg>
+          </div>
+          <div class="cert-content">
+            <h3>Programming Fundamentals Using Python</h3>
+            <span class="cert-provider">Infosys Springboard · 2026</span>
+          </div>
+          <div class="cert-image-link">
+            <a href="python_Certificate.pdf" target="_blank" class="btn btn-sm">View Certificate</a>
+          </div>
+        </div>
+        <!-- Cert 3 -->
+        <div class="cert-card reveal-up delay-3">
+          <div class="cert-badge">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 15l-2 5 2-1.5L14 20l-2-5z" />
+              <circle cx="12" cy="9" r="6" />
+            </svg>
+          </div>
+          <div class="cert-content">
+            <h3>AWS Academy Graduate – Cloud Foundations</h3>
+            <span class="cert-provider">AWS Academy · 2026</span>
+          </div>
+          <div class="cert-image-link">
+            <a href="Aws Cloud Foundations.pdf" target="_blank" class="btn btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 8 — ACHIEVEMENTS ═══════════════════ -->
+  <section id="achievements" class="section section-achievements">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">07</span>
+        <h2 class="section-title">Achievements</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="achievements-subheading reveal-up">
+        Recognitions, milestones, and moments that reflect dedication, curiosity, and the drive to excel.
+      </p>
+
+      <div class="achievements-counter reveal-up delay-1">
+        <div class="counter-item">
+          <span class="counter-num" data-count="1">0</span><span class="counter-suffix">+</span>
+          <span class="counter-label">Years Experience</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-num" data-count="3">0</span>
+          <span class="counter-label">Certifications</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-num" data-count="2">0</span>
+          <span class="counter-label">Projects</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-num" data-count="2">0</span>
+          <span class="counter-label">Clients Served</span>
+        </div>
+      </div>
+
+      <div class="achievements-grid">
+        <!-- Achievement 1 -->
+        <div class="ach-card reveal-up delay-1">
+          <div class="ach-year">2026</div>
+          <div class="ach-category professional">Professional</div>
+          <h3>Freelance Web Development – International Client</h3>
+          <span class="ach-institution">Willfix Computers, Toronto, Canada</span>
+          <p>Successfully delivered a production-ready business website for an international client in Toronto,
+            demonstrating the ability to work remotely and independently on client projects across borders.</p>
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="ach-card reveal-up delay-2">
+          <div class="ach-year">2026</div>
+          <div class="ach-category academic">Academic</div>
+          <h3>AWS Academy Graduate – Cloud Foundations</h3>
+          <span class="ach-institution">AWS Academy</span>
+          <p>Earned the AWS Academy Graduate credential in Cloud Foundations, demonstrating proficiency in cloud
+            computing fundamentals and AWS services.</p>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="ach-card reveal-up delay-3">
+          <div class="ach-year">2025</div>
+          <div class="ach-category hackathon">Hackathon</div>
+          <h3>Hackathon Participation</h3>
+          <span class="ach-institution">KLS Vishwanathrao Institute of Technology</span>
+          <p>Participated in the college hackathon, collaborating with peers to develop innovative solutions under time
+            constraints, strengthening teamwork and rapid prototyping skills.</p>
+        </div>
+
+        <!-- Achievement 4 -->
+        <div class="ach-card reveal-up delay-4">
+          <div class="ach-year">2025</div>
+          <div class="ach-category hackathon">Ideathon</div>
+          <h3>Ideathon Participation</h3>
+          <span class="ach-institution">KLS Vishwanathrao Institute of Technology</span>
+          <p>Participated in the college ideathon, presenting innovative project concepts and demonstrating creativity
+            in problem-solving and ideation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 9 — VOLUNTEERING ═══════════════════ -->
+  <section id="volunteering" class="section section-volunteering">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">08</span>
+        <h2 class="section-title">Volunteering</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="volunteer-grid">
+        <div class="volunteer-card reveal-up delay-1">
+          <div class="volunteer-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3>Hackathon Volunteer</h3>
+          <div class="volunteer-org">KLS Vishwanathrao Institute of Technology, Haliyal</div>
+          <div class="volunteer-duration">2025</div>
+          <p>Volunteered in organizing the college hackathon event, assisting with event logistics, participant
+            registration, and technical support. Helped coordinate teams, manage schedules, and ensure smooth execution
+            of the hackathon, fostering a collaborative and innovative environment for all participants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE 10 — CONTACT ═══════════════════ -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">09</span>
+        <h2 class="section-title">Let's <span class="text-accent">Connect</span> & Build Something Great</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="contact-tagline reveal-up">Turning ideas into clean, functional, and impactful web experiences · Ilkal,
+        India</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-up delay-1">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:nandinisarla2@gmail.com" class="contact-value">nandinisarla2@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918073752599" class="contact-value">+91 8073752599</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Ilkal, India</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/nandini-sarala" target="_blank" rel="noopener" class="social-link"
+              aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/nandinisarala" target="_blank" rel="noopener" class="social-link"
+              aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="mailto:nandinisarla2@gmail.com" class="social-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-up delay-2" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="formName" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="formSubject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Nandini Sarala. Built with <span class="heart">♥</span> and clean code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
